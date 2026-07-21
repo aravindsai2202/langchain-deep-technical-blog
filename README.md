@@ -27,6 +27,9 @@ This repository contains a fully working Jupyter/Colab notebook demonstrating th
 - **Google Colab** — development environment
 
 ## 📂 Repository Structure
+langchain-deep-technical-blog/
+├── LangChain_Deep_Technical_Blog.ipynb # Full notebook with all code + explanations
+└── README.md
 
 ## 🚀 Running This Notebook
 
