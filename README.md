@@ -27,3 +27,30 @@ This repository contains a fully working Jupyter/Colab notebook demonstrating th
 - **Google Colab** — development environment
 
 ## 📂 Repository Structure
+
+## 🚀 Running This Notebook
+
+1. Open `LangChain_Deep_Technical_Blog.ipynb` in Google Colab or Jupyter
+2. Install dependencies:
+```bash
+   pip install langchain langchain-huggingface langchain-community huggingface_hub faiss-cpu sentence-transformers python-dotenv
+```
+3. Get a free HuggingFace access token from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) (enable **"Make calls to Inference Providers"** permission)
+4. Set it as an environment variable:
+```python
+   import os
+   os.environ["HUGGINGFACEHUB_API_TOKEN"] = "your_token_here"
+```
+5. Run all cells top to bottom
+
+## ✨ Key Highlights
+
+- Uses **modern LCEL syntax** (`prompt | llm | parser`) rather than deprecated legacy chains
+- **Agent with custom tool** demonstrates function-calling / tool-use reasoning
+- **Session-based memory** using `RunnableWithMessageHistory`
+- **FAISS vector store** for semantic similarity search, forming the foundation of RAG pipelines
+- All models used are **free-tier** — no paid API keys required
+
+## 👤 Author
+
+Aravind Sai Thanneru — Data Science Intern
